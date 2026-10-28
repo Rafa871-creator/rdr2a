@@ -1,0 +1,142 @@
+
+/**
+ * @name RDR2 — Blood Moon
+ * @author Rafa
+ * @description Dark Red Dead Redemption 2 theme with neon-red accents.
+ * @version 1.1.0
+ */
+
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+
+/* =====================================
+   COLORS & BACKGROUND
+   ===================================== */
+
+:root {
+    --main-color: #ff1a1a;
+    --hover-color: #ff4d4d;
+    --success-color: #c62828;
+    --danger-color: #ff0000;
+    --url-color: #ff4545;
+
+    /* BACKGROUND IMAGE */
+    --background-image: url("https://wallpapercave.com/wp/wp2614327.jpg");
+    --background-position: center;
+    --background-size: cover;
+    --background-attachment: fixed;
+    --background-shading-percent: 35%;
+
+    --text-normal: #f2dddd;
+    --text-muted: #b99a9a;
+    --interactive-normal: #d9baba;
+    --interactive-hover: #ff4d4d;
+    --interactive-active: #ff1a1a;
+}
+
+/* =====================================
+   NEON-RED USERNAMES
+   ===================================== */
+
+[class*="username"] {
+    color: #ff4545 !important;
+    text-shadow:
+        0 0 4px #ff0000,
+        0 0 8px #ff0000,
+        0 0 16px #ff000088 !important;
+}
+
+/* =====================================
+   NEON-RED ROLE NAMES
+   ===================================== */
+
+[class*="role"] [class*="name"],
+[class*="roleName"],
+[class*="roleTag"] {
+    text-shadow:
+        0 0 4px #ff0000,
+        0 0 8px #ff0000aa !important;
+}
+
+/* =====================================
+   NEON-RED CHANNEL NAMES
+   ===================================== */
+
+[class*="channel"] [class*="name"],
+[class*="modeSelected"] [class*="name"] {
+    color: #ff4545 !important;
+    text-shadow:
+        0 0 4px #ff0000,
+        0 0 10px #ff0000aa !important;
+}
+
+/* =====================================
+   SELECTED CHANNEL
+   ===================================== */
+
+[class*="modeSelected"] [class*="link"] {
+    background: #ff000022 !important;
+    box-shadow:
+        inset 3px 0 #ff0000,
+        0 0 10px #ff000044 !important;
+}
+
+/* =====================================
+   NEON BUTTONS
+   ===================================== */
+
+button:hover,
+[class*="lookFilled"]:hover {
+    box-shadow: 0 0 12px #ff000099 !important;
+}
+
+/* =====================================
+   RED LINKS
+   ===================================== */
+
+a {
+    color: #ff4545 !important;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:hover {
+    color: #ff7777 !important;
+    text-shadow: 0 0 8px #ff0000 !important;
+}
+
+/* =====================================
+   DARK PANELS
+   ===================================== */
+
+[class*="sidebar"],
+[class*="chatContent"],
+[class*="members"],
+[class*="panels"] {
+    background-color: #100505cc !important;
+}
+
+/* =====================================
+   AVATAR GLOW ON HOVER
+   ===================================== */
+
+[class*="avatar"]:hover img {
+    filter: drop-shadow(0 0 7px #ff0000) !important;
+}
+
+/* =====================================
+   SERVER ICONS — NO ADDED GLOW
+   ===================================== */
+
+[class*="guilds"] img {
+    filter: none !important;
+    box-shadow: none !important;
+}
+
+/* =====================================
+   SMOOTH TRANSITIONS
+   ===================================== */
+
+button,
+a {
+    transition: box-shadow 0.2s ease, color 0.2s ease;
+}
